@@ -6,20 +6,14 @@ public class Match {
     private String awayTeam; // Num - 1
     private Integer winningTeam;
     private Integer losingTeam;
+    private Integer matchNum;
 
     public Match(String hTeam, String aTeam) {
         homeTeam = hTeam;
         awayTeam = aTeam;
         winningTeam = -1;
         losingTeam = -1;
-    }
-
-    public Integer getWinningTeam() {
-        return winningTeam;
-    }
-
-    public Integer getLosingTeam() {
-        return losingTeam;
+        matchNum = 0;
     }
 
     public void setResultByWinning(Integer winningTeam) {
@@ -32,12 +26,27 @@ public class Match {
         }
     }
 
+    public Integer getWinningTeam() {
+        return winningTeam;
+    }
+
+    public Integer getLosingTeam() {
+        return losingTeam;
+    }
+    public Integer getMatchNum() {
+        return matchNum;
+    }
+
     public void setWinningTeam(Integer winningTeam) {
         this.winningTeam = winningTeam;
     }
 
     public void setLosingTeam(Integer losingTeam) {
         this.losingTeam = losingTeam;
+    }
+
+    public void setMatchNum(Integer matchNum) {
+        this.matchNum = matchNum;
     }
 }
 
