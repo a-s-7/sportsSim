@@ -15,7 +15,7 @@ public class Season {
         teamList.add(t);
     }
 
-    public void addMatch(Match t) {
-        matchList.add(t);
+    public void addMatch(Match m) {
+        matchList.add(m);
     }
 }
