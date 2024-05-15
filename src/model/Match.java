@@ -1,13 +1,13 @@
 package model;
 
 public class Match {
-    private String homeTeam;
-    private String awayTeam;
+    private Team homeTeam;
+    private Team awayTeam;
     private TeamType winningTeam;
     private TeamType losingTeam;
     private Integer matchNum;
 
-    public Match(String hTeam, String aTeam) {
+    public Match(Team hTeam, Team aTeam) {
         homeTeam = hTeam;
         awayTeam = aTeam;
         winningTeam = null;
