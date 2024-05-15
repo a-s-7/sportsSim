@@ -1,47 +1,51 @@
 package model;
 
 public class Match {
-    private String homeTeam; // Num - 0
-
-    private String awayTeam; // Num - 1
-    private Integer winningTeam;
-    private Integer losingTeam;
+    private String homeTeam;
+    private String awayTeam;
+    private TeamType winningTeam;
+    private TeamType losingTeam;
     private Integer matchNum;
 
     public Match(String hTeam, String aTeam) {
         homeTeam = hTeam;
         awayTeam = aTeam;
-        winningTeam = -1;
-        losingTeam = -1;
+        winningTeam = null;
+        losingTeam = null;
         matchNum = 0;
     }
 
-    public void setResultByWinning(Integer winningTeam) {
+    // Assigns the winning and losing team for a match, based on the team type of the winning team
+    public void setResultByWinning(TeamType winningTeam) {
         setWinningTeam(winningTeam);
 
-        if(winningTeam == 1) {
-            setLosingTeam(0);
-        } else {
-            setLosingTeam(1);
+        if(winningTeam == TeamType.HOME) { // If winning team is homeTeam, set awayTeam as losing team
+            setLosingTeam(TeamType.AWAY);
+        } else { // If winning team is awayTeam, set homeTeam as losing team
+            setLosingTeam(TeamType.HOME);
         }
     }
 
-    public Integer getWinningTeam() {
+    // Getters
+
+    public TeamType getWinningTeam() {
         return winningTeam;
     }
 
-    public Integer getLosingTeam() {
+    public TeamType getLosingTeam() {
         return losingTeam;
     }
     public Integer getMatchNum() {
         return matchNum;
     }
 
-    public void setWinningTeam(Integer winningTeam) {
+    // Setters
+
+    public void setWinningTeam(TeamType winningTeam) {
         this.winningTeam = winningTeam;
     }
 
-    public void setLosingTeam(Integer losingTeam) {
+    public void setLosingTeam(TeamType losingTeam) {
         this.losingTeam = losingTeam;
     }
 

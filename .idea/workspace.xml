@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748a3847-c15f-4f67-a5b2-be69192eeb33" name="Changes" comment="Added TeamTest class">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="748a3847-c15f-4f67-a5b2-be69192eeb33" name="Changes" comment="Fixed typo">
+      <change afterPath="$PROJECT_DIR$/src/model/TeamType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Match.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -52,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715649094242</updated>
-      <workItem from="1715649095139" duration="3261000" />
+      <workItem from="1715649095139" duration="5054000" />
     </task>
     <task id="LOCAL-00001" summary="Added project folders with Season and Model objects">
       <created>1715650696325</created>
@@ -75,7 +78,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715655053584</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added TeamTest and md files">
+      <created>1715655121859</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715655121859</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed typo">
+      <created>1715655218440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715655218440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +103,8 @@
     <MESSAGE value="Added project folders with Season and Model objects" />
     <MESSAGE value="Added Team class" />
     <MESSAGE value="Added TeamTest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TeamTest class" />
+    <MESSAGE value="Added TeamTest and md files" />
+    <MESSAGE value="Fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed typo" />
   </component>
 </project>
