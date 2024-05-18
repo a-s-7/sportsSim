@@ -11,12 +11,7 @@ public class TeamTest {
 
     @BeforeEach
     void runBefore() {
-        t1 = new Team("Delhi Capitals", 2, 1, 1, 0, 0);
-    }
-
-    @Test
-    void testGetNumMatchesPlayed(){
-        assertEquals(1, t1.getNumMatchesPlayed());
+        t1 = new Team("Delhi Capitals");
     }
 
     // TESTS: Getters
@@ -45,4 +40,40 @@ public class TeamTest {
         assertEquals(0, t1.getNoResultCount());
 
     }
+
+    @Test
+    void testGetNumMatchesPlayed(){
+        assertEquals(0, t1.getMatchCount());
+    }
+
+
+//    // TESTS: Setters
+//    @Test
+//    void testSetName(){
+//        t1.setName("Mumbai Indians");
+//        assertEquals("Mumbai Indians", t1.getName());
+//    }
+//
+//    @Test
+//    void testSetPoints(){
+//        t1.setPoints(4);
+//        assertEquals(4, t1.getPoints());
+//    }
+//
+//    @Test
+//    void testSetWinCount(){
+//        t1.setWinCount(3);
+//        assertEquals(3, t1.getWinCount());
+//    }
+//
+//    @Test
+//    void testSetLossCount(){
+//        t1.setWinCount(3);
+//        assertEquals(3, t1.getLossCount());
+//    }
+//    @Test
+//    void testGetNoResultCount(){
+//        assertEquals(0, t1.getNoResultCount());
+//
+//    }
 }

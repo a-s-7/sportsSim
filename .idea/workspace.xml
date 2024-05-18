@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748a3847-c15f-4f67-a5b2-be69192eeb33" name="Changes" comment="Added enum for team type, and comments">
+    <list default="true" id="748a3847-c15f-4f67-a5b2-be69192eeb33" name="Changes" comment="Added tests, getters/setters for Team">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sportsSim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportsSim.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Tournament.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/MatchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MatchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TeamTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,7 +52,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TeamTest">
+  <component name="RunManager" selected="JUnit.TeamTest.testSetPoints">
     <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sportsSim" />
       <extension name="coverage">
@@ -86,8 +84,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TeamTest.testSetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sportsSim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TeamTest" />
+      <option name="METHOD_NAME" value="testSetName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest.testSetPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sportsSim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TeamTest" />
+      <option name="METHOD_NAME" value="testSetPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamTest.testSetPoints" />
+        <item itemvalue="JUnit.TeamTest.testSetName" />
         <item itemvalue="JUnit.TeamTest" />
         <item itemvalue="JUnit.TeamTest.testGetters" />
       </list>
@@ -101,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715649094242</updated>
-      <workItem from="1715649095139" duration="6748000" />
+      <workItem from="1715649095139" duration="9608000" />
     </task>
     <task id="LOCAL-00001" summary="Added project folders with Season and Model objects">
       <created>1715650696325</created>
@@ -145,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715815298617</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added tests, getters/setters for Team">
+      <created>1715817146403</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715817146403</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +198,18 @@
     <MESSAGE value="Added TeamTest and md files" />
     <MESSAGE value="Fixed typo" />
     <MESSAGE value="Added enum for team type, and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added enum for team type, and comments" />
+    <MESSAGE value="Added tests, getters/setters for Team" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests, getters/setters for Team" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/TeamTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

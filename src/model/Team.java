@@ -3,19 +3,44 @@ package model;
 public class Team {
     private String name;
     private Integer points;
-    private Integer numMatchesPlayed;
+    private Integer matchCount;
     private Integer winCount;
     private Integer lossCount;
     private Integer noResultCount;
 
-    public Team(String teamName, Integer p, Integer nMP, Integer nMW, Integer nML, Integer nMNR) {
+    public Team(String teamName) {
         this.name = teamName;
-        this.points = p;
-        this.numMatchesPlayed = nMP;
-        this.winCount = nMW;
-        this.lossCount = nML;
-        this.noResultCount = nMNR;
+        this.points = 0;
+        this.matchCount = 0;
+        this.winCount = 0;
+        this.lossCount = 0;
+        this.noResultCount = 0;
+    }
 
+    // General Methods:
+
+    public void incrementMatchCount() {
+        this.matchCount++;
+    }
+
+    public void incrementWinCount() {
+        this.winCount++;
+    }
+
+    public void incrementLossCount() {
+        this.lossCount++;
+    }
+
+    public void incrementNoResultCount() {
+        this.noResultCount++;
+    }
+
+    public boolean checkTeamCounts() {
+        return this.matchCount == (this.winCount + this.lossCount + this.noResultCount);
+    }
+
+    public void incrementPoints(Integer points) {
+        this.points += points;
     }
 
     // Getters
@@ -27,8 +52,8 @@ public class Team {
         return this.points;
     }
 
-    public Integer getNumMatchesPlayed() {
-        return this.numMatchesPlayed;
+    public Integer getMatchCount() {
+        return this.matchCount;
     }
 
     public Integer getWinCount() {
@@ -53,8 +78,8 @@ public class Team {
         this.points = points;
     }
 
-    public void setNumMatchesPlayed(Integer numMatchesPlayed) {
-        this.numMatchesPlayed = numMatchesPlayed;
+    public void setMatchCount(Integer matchCount) {
+        this.matchCount = matchCount;
     }
 
     public void setWinCount(Integer winCount) {
